@@ -56,14 +56,11 @@
 
 .event {
   font-size: 1.6em;
-  font-weight: bold;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 .location {
   font-size: 1.5em;
-  font-weight: 500;
-  opacity: .5;
 }
 
 .day {

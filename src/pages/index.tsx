@@ -96,7 +96,7 @@ function Schedule() {
                       <p className={scheduleStyles.time}>{obj.time}</p>
                   </div>
                   <div className={scheduleStyles.column}>
-                      <p className={scheduleStyles.day}>{obj.location}</p>
+                      <p className={scheduleStyles.location}>{obj.location}</p>
                   </div>
               </div>
           ))}
