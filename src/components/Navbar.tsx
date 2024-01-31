@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { picklogo24, discord, instagram, linkedin, tiktok, mlh } from '@/lib/Images';
 import styles from '../styles/components/Navbar.module.css'
 
 function Navbar() {
