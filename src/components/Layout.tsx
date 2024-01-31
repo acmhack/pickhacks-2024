@@ -8,7 +8,7 @@ interface IProps {
 
 export default function Layout({ children }: IProps ) {
     return (
-        <div className={styles.container}>
+        <div className={styles.main}>
             {children}
         </div>
     )

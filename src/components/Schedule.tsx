@@ -1,6 +1,6 @@
 import { IEvent } from '@/interfaces/IEvent';
 import { Events } from '@/lib/Events';
-import styles from '@/styles/Schedule.module.css';
+import styles from '@/styles/components/Schedule.module.css';
 import { useState, useEffect } from 'react';
 
 const Schedule = () => {
