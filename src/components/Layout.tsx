@@ -1,10 +1,15 @@
 import Image from 'next/image';
-import { background2024 } from '../lib/Images';
+import { background2024 } from '@/lib/Images';
+import styles from "@/styles/components/Layout.module.css"
 
-export default function Layout() {
+interface IProps {
+    children: JSX.Element
+}
+
+export default function Layout({ children }: IProps ) {
     return (
-        <div>
-
+        <div className={styles.container}>
+            {children}
         </div>
     )
 }
