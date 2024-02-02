@@ -19,7 +19,7 @@ function Navbar() {
           <li className={styles.socialitem}><a className={styles.icon} href='https://discord.gg/p3fcxGzjxa'><img src={discord.src}/></a></li>
           <li className={styles.socialitem}><a className={styles.icon} href='https://www.instagram.com/sandtpickhacks'><img src={instagram.src}/></a></li>
           <li className={styles.socialitem}><a className={styles.icon} href='https://www.linkedin.com/company/pickhacks'><img src={linkedin.src}/></a></li>
-          <li className={styles.socialitem}><a className={styles.icon} href='#'><img src={tiktok.src}/></a></li>
+          <li className={styles.socialitem}><a className={styles.icon} href='https://www.tiktok.com/@sandtpickhacks'><img src={tiktok.src}/></a></li>
           <li className={styles.banneritem}><a className={styles.banner} href='https://mlh.io/'><img src={mlh.src}/></a></li>
         </ul>
       </div>
