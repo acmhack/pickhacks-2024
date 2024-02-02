@@ -1,5 +1,6 @@
 import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 import { bullet, bulletExpand } from '@/lib/Images';
+import styles from '@/styles/components/Faq.module.css';
 
 type Props = {
     question: string,
@@ -16,6 +17,8 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
     useEffect(()=>{
         if(contentRef.current) {
             contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
+            contentRef.current.style.opacity = turn![idx] ? '100%' : '0%';
+            contentRef.current.style.fontSize = turn![idx] ? '15px' : '0px';
         }
     }, [contentRef, turn, idx])
 
@@ -28,9 +31,9 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
     return (
         <div>
             <button onClick={toggleAccordian}
-            className={''}>
+            className={styles.accordianButton}>
                 <div className=''>
-                    <div className=''>
+                    <div className={styles.accordian}>
                         <span style={{paddingRight: '10px'}}>
                             { turn![idx] ? 
                             <img src={bulletExpand.src} alt=""/> :
@@ -38,7 +41,7 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
                         </span>
                         <span className="question">{question}</span>
                     </div>
-                    <div ref={contentRef}>
+                    <div className={styles.accordianAnswer} ref={contentRef}>
                         <p>
                             {answer}
                         </p>

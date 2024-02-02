@@ -1,6 +1,6 @@
 import { IQA } from '@/interfaces/IQA';
 import { QAData } from '@/lib/FaqData';
-import styles from '@/styles/components/Nav.module.css';
+import styles from '@/styles/components/Faq.module.css';
 import { bullet, bulletExpand } from '@/lib/Images';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -16,21 +16,16 @@ const Faq = () => {
         isSomeActive ? setActive([false, false, false, false, false, false, false, false]) : setActive([true, true, true, true, true, true, true, true])
     }
 
-    const [currData, setCurrData] = useState<IQA[]>([]);
-
 	return (
 		<div className={styles.App}>
             <p className={styles.title}>FAQ</p>
 
             <div className={styles.duh}>
                 <button className={styles.wholethign} onClick={handleClick}>
+                    <img src={bullet.src} alt='bullet' style={{paddingRight: '10px'}}/>
                     <span className={styles.suggestions}>
                         {!isSomeActive ? "OpenAll" : "CloseAll"}
                     </span>
-                    <div className='relative transition-all ease-in-out duration-200'>
-                        <img src={bullet.src} alt='bullet' />
-
-                    </div>
                 </button>
             </div>
             <div className={styles.grid}>
