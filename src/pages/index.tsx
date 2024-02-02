@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import { useEffect, useState } from 'react';
 import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
+import Faq from '@/components/Faq';
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 			<main className={`${styles.main}`}>
 				<Hero />
 				<Schedule />
+				<Faq />
 			</main>
 		</>
 	);
