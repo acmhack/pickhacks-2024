@@ -1,5 +1,4 @@
 .App {
-    font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -7,9 +6,27 @@
     gap: 1.5em;
   }
 
+  .title {
+    font-size: 72px;
+    background: linear-gradient(45deg, rgba(255,82,210,1) 0%, rgba(135,50,255,1) 63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: .5em;
+    margin-top: 1em;
+  }
+
   .grid {
-    
+    color:#ffffff;
+    padding: 78px 353px;
+    max-height: 50vh;
+    width: 100%;
     background: rgba(0,0,0,1);
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
   }
   
   .row {
@@ -23,17 +40,7 @@
     display: flex;
     flex-flow: column wrap;
   }
-
-  .title {
-    font-size: 72px;
-    background: linear-gradient(45deg, rgba(255,82,210,1) 0%, rgba(135,50,255,1) 63%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 5em;
-    font-weight: bold;
-    margin-bottom: .5em;
-    margin-top: 1em;
-  }
+  
   
   .subtitle {
     background-color: #8732FF;

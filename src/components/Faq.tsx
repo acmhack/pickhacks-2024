@@ -22,7 +22,7 @@ const Faq = () => {
 		<div className={styles.App}>
             <p className={styles.title}>FAQ</p>
 
-            <div className={styles.grid}>
+            <div className={styles.duh}>
                 <button className={styles.wholethign} onClick={handleClick}>
                     <span className={styles.suggestions}>
                         {!isSomeActive ? "OpenAll" : "CloseAll"}
