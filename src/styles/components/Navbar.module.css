@@ -1,16 +1,17 @@
 .navbar {
 	background: url('../../../public/images/backgrounds/BackgroundNav.png');
 	padding: 10px 0;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 99;
+	width: 100%;
 }
 
 .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	margin: 0 3em;
 	height: 50px;
 }
 
@@ -48,10 +49,6 @@
 	align-items: center;
 }
 
-.list {
-	margin-left: 2em;
-}
-
 .socialContainer {
 	display: flex;
 	margin-right: 2em;
@@ -68,6 +65,7 @@
 	color: white;
 	font-weight: 500;
 	font-size: 1.1em;
+	z-index: 101;
 }
 
 .buttons:visited {
@@ -76,6 +74,7 @@
 
 .buttons:hover {
 	text-decoration: none;
+	color: #ff52d2;
 }
 
 .banneritem {
@@ -90,11 +89,14 @@
 	color: white;
 	font-weight: 500;
 	font-size: 1.1em;
+	z-index: 101;
+	background: linear-gradient(to left, transparent 50%, #ff52d2 50%) right;
+	background-size: 202% 100%;
 }
 
 .applyButton:hover {
-	background-color: #ff52d2;
-	transition: background-color 0.3s ease-out;
+	background-position: left;
+	transition: all 0.75s ease;
 	cursor: pointer;
 }
 

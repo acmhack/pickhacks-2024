@@ -1,4 +1,6 @@
 .main {
-    background-image: url('../../../public/images/backgrounds/Background2024.png');
-    height: 100%;
+	background-image: url('../../../public/images/backgrounds/Background2024.png');
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
