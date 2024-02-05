@@ -1,10 +1,12 @@
 .navbar {
 	background: url('../../../public/images/backgrounds/BackgroundNav.png');
+	background-color: #17072f;
 	padding: 10px 0;
 	position: fixed;
 	top: 0;
 	z-index: 99;
 	width: 100%;
+	opacity: 100%;
 }
 
 .container {
@@ -12,7 +14,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 3em;
-	height: 50px;
+	height: 3em;
 }
 
 .logo {

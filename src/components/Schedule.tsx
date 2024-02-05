@@ -18,18 +18,19 @@ const Schedule = () => {
 		}
 	};
 	return (
-		<div className={styles.App} id="schedule">
-			<p className={styles.title}>Schedule</p>
+		<div className={styles.App}>
 			<div className={styles.row}>
 				{['Friday', 'Saturday', 'Sunday'].map((day) => (
-					<p
-						key={day}
-						className={styles.subtitle}
-						style={{ background: selected == day ? 'rgb(91, 82, 224)' : 'rgb(42, 20, 73)' }}
-						onClick={() => toggle(day)}
-					>
-						{day}
-					</p>
+					<>
+						<div
+							className={`${styles.dayContainer} ${selected === day ? styles.selectedDay : ""}`}
+							key={day}
+							onClick={() => toggle(day)}
+							// style={{ background: selected == day ? 'rgb(91, 82, 224)' : 'rgb(42, 20, 73)' }}
+						>
+							<p className={styles.day}>{day}</p>
+						</div>
+					</>
 				))}
 			</div>
 			{currData.map((obj) => (

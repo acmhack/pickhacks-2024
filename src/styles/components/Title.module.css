@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.title {
+    background: linear-gradient(45deg, rgba(255,82,210,1) 0%, rgba(135,50,255,1) 63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    font-weight: bold;
+}

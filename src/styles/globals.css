@@ -7,6 +7,7 @@
 	position: relative;
 	font-family: 'Ubuntu';
     scroll-behavior: smooth;
+    scroll-margin: 3em;
 }
 
 html,

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
+import Title from '@/components/Title';
 
 export default function Home() {
 	return (
@@ -16,9 +17,11 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={`${styles.main}`}>
-				<Navbar />
 				<Hero />
-				<Schedule />
+				<div className={styles.section} id="schedule">
+					<Title>Schedule</Title>
+					<Schedule />
+				</div>
 			</main>
 		</>
 	);
