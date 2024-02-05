@@ -1,0 +1,48 @@
+.footer {
+	background-color: #1c0044;
+	width: 100%;
+	min-height: 4em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	padding: 0 2em;
+	flex-wrap: wrap;
+}
+
+.love {
+	font-weight: bold;
+}
+
+.left,
+.mid,
+.right {
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+.left {
+	display: flex;
+	gap: 2em;
+}
+
+.left a:hover {
+	color: #ff52d2;
+}
+
+.mid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+}
+
+.right {
+	text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+	.footer {
+		font-size: 13px;
+	}
+}
