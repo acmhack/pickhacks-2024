@@ -1,97 +1,105 @@
 .navbar {
-    background-color: #333333a1;
-    padding: 10px 0;
-    position: sticky; top: 0;
-    z-index: 99;
+	background: url('../../../public/images/backgrounds/BackgroundNav.png');
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
+	z-index: 99;
 }
-  
+
 .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	height: 50px;
 }
 
 .logo {
-text-decoration: none;
-color: white;
-margin-right: 20px;
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
 }
 
 .logo a img {
-width: 50px;
-height: auto; 
+	width: 2.5em;
+	height: auto;
 }
 
 .icon {
-text-decoration: none;
-color: white;
+	text-decoration: none;
+	color: white;
 }
 
-.socialitem{
-    margin-right: 20px;
+.socialitem {
+	margin-right: 20px;
 }
 
-.icon a img {
-width: 20px;
-height: auto; 
+.icon img {
+	height: 1.4em;
+	width: auto;
 }
 
 .list,
 .social {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
-align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
 }
 
+.list {
+	margin-left: 2em;
+}
 
+.socialContainer {
+	display: flex;
+	margin-right: 2em;
+	gap: 0.6em;
+}
 
 .item {
-margin-left: 20px;
-margin-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .buttons {
-text-decoration: none;
-color: white;
-font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 1.1em;
 }
 
-.buttons:visited{
-    color: white;
+.buttons:visited {
+	color: white;
 }
 
 .buttons:hover {
-text-decoration: none;
-}
-  
-.banneritem{
-    overflow: visible;
+	text-decoration: none;
 }
 
-.apply{
-    margin-left: 20px;
-    border: 2px solid #c726b9;
-    border-radius: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+.banneritem {
+	overflow: visible;
 }
 
-.applybutton{
-    text-decoration: none;
+.applyButton {
+	margin-left: 20px;
+	border: #ff52d2 2px solid;
+	border-radius: 2em;
+	padding: 0.3em 1em;
+	color: white;
+	font-weight: 500;
+	font-size: 1.1em;
 }
 
-.applybutton:visited{
-    color: white;
+.applyButton:hover {
+	background-color: #ff52d2;
+	transition: background-color 0.3s ease-out;
+	cursor: pointer;
 }
 
 /* FIXME : kinda hardcoded right now*/
-.banneritem a img{
-    overflow: visible;
-    margin-top: 120px;
+.banneritem a img {
+	overflow: visible;
+	margin-top: 120px;
 }
