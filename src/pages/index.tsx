@@ -7,6 +7,7 @@ import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
+import { littlestGuy } from '@/lib/Images';
 
 export default function Home() {
 	return (
@@ -23,6 +24,13 @@ export default function Home() {
 					<Title>Schedule</Title>
 					<Schedule />
 				</div>
+				<div className={styles.section} id="schedule">
+					<Title>Prizes</Title>
+                    <p className={styles.fillerText}>Coming soon...</p>
+				</div>
+                <div className={styles.smallGuySection}>
+                    <img src={littlestGuy.src}/>
+                </div>
 			</main>
             <Footer />
 		</>
