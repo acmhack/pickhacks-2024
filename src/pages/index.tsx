@@ -20,19 +20,19 @@ export default function Home() {
 			</Head>
 			<main className={`${styles.main}`}>
 				<Hero />
-				<div className={styles.section} id="schedule">
+				<div className={styles.section} id='schedule'>
 					<Title>Schedule</Title>
 					<Schedule />
 				</div>
-				<div className={styles.section} id="schedule">
+				<div className={styles.section} id='schedule'>
 					<Title>Prizes</Title>
-                    <p className={styles.fillerText}>Coming soon...</p>
+					<p className={styles.fillerText}>Coming soon...</p>
 				</div>
-                <div className={styles.smallGuySection}>
-                    <img src={littlestGuy.src}/>
-                </div>
+				<div className={styles.smallGuySection}>
+					<img src={littlestGuy.src} />
+				</div>
 			</main>
-            <Footer />
+			<Footer />
 		</>
 	);
 }
