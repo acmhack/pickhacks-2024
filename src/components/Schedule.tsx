@@ -18,7 +18,7 @@ const Schedule = () => {
 		}
 	};
 	return (
-		<div className={styles.App}>
+		<div className={styles.App} id="schedule">
 			<p className={styles.title}>Schedule</p>
 			<div className={styles.row}>
 				{['Friday', 'Saturday', 'Sunday'].map((day) => (

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero = () => {
 	return (
-		<div className={styles.main}>
+		<div className={styles.main} id="home">
 			<div className={styles.left}>
 				<img src={lildude.src} className={styles.securityGuard} alt='security guard'></img>
 			</div>
