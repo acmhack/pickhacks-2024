@@ -27,8 +27,23 @@ export default function Home() {
 					<Title>Schedule</Title>
 					<Schedule />
 				</div>
-				<div className={styles.section} id='schedule'>
+				<div className={styles.section} id='prizes'>
 					<Title>Prizes</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='sponsors'>
+					<Title>Sponsors</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='partners'>
+					<Title>Partners</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='faq'>
+					<Title>FAQ</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+					<div className={styles.separate} id='team'></div>
+					<Title>Team</Title>
 					<p className={styles.fillerText}>Coming soon...</p>
 				</div>
 				<div className={styles.smallGuySection}>

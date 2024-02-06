@@ -72,12 +72,15 @@
 		font-size: 14px;
 	}
 	.right {
-		top: 28%;
+		top: 28.75%;
 	}
 }
 @media screen and (max-width: 1460px) {
 	.main {
 		font-size: 13px;
+	}
+    .right {
+		top: 28%;
 	}
 }
 @media screen and (max-width: 1338px) {
