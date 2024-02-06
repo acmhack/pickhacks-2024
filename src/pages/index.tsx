@@ -7,7 +7,7 @@ import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
-import { littlestGuy } from '@/lib/Images';
+import { littlestGuy, stars } from '@/lib/Images';
 
 export default function Home() {
 	return (
@@ -18,7 +18,10 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className={`${styles.main}`}>
+			<main className={styles.main}>
+				<object data={stars.src} type='image/svg+xml' className={styles.background}>
+					<img src='../../public/images/backgrounds/BackgroundNav.png' />
+				</object>
 				<Hero />
 				<div className={styles.section} id='schedule'>
 					<Title>Schedule</Title>

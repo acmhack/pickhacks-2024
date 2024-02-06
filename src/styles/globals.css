@@ -6,8 +6,8 @@
 	margin: 0;
 	position: relative;
 	font-family: 'Ubuntu';
-    scroll-behavior: smooth;
-    scroll-margin: 3em;
+	scroll-behavior: smooth;
+	scroll-margin: 3em;
 }
 
 html,
@@ -18,6 +18,27 @@ body {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #190b2d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #f3eaff;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #c8c2d1;
 }

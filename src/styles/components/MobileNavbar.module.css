@@ -2,7 +2,17 @@
 	width: 100%;
 	display: flex;
 	padding: 1.25em 1.75em;
-	position: absolute;
+	position: fixed;
+	z-index: 99;
+}
+
+.logo {
+	width: 2em;
+	height: 2em;
+	position: fixed;
+	top: 1.25em;
+	left: 1.75em;
+	z-index: 99;
 }
 
 .icon {

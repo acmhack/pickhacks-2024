@@ -1,3 +1,12 @@
+.main {
+	overflow-y: hidden;
+}
+
+.background {
+	position: absolute;
+	z-index: 0;
+}
+
 .section {
 	min-height: 100vh;
 	padding-top: 3em;
@@ -14,5 +23,5 @@
 
 .smallGuySection {
 	display: flex;
-    margin-left: 10em;
+	margin-left: 10em;
 }

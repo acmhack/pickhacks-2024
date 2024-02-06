@@ -21,11 +21,13 @@
 	text-decoration: none;
 	color: white;
 	margin-right: 20px;
+	display: inline-block;
+	height: 2.5em;
 }
 
-.logo a img {
+.logo img {
 	width: 2.5em;
-	height: auto;
+	height: 2.5em;
 }
 
 .icon {
@@ -35,6 +37,7 @@
 
 .socialitem {
 	margin-right: 20px;
+	transition: transform 200ms ease-in-out;
 }
 
 .icon img {
@@ -75,8 +78,7 @@
 }
 
 .buttons:hover {
-	text-decoration: none;
-	color: #ff52d2;
+	color: rgb(219, 208, 219);
 }
 
 .banneritem {
@@ -106,4 +108,8 @@
 .banneritem a img {
 	overflow: visible;
 	margin-top: 120px;
+}
+
+.socialitem:hover {
+	transform: scale(1.1);
 }
