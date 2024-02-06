@@ -13,8 +13,8 @@
 	height: 47.5em;
 	width: 70em;
 	position: absolute;
-	top: 10%;
-	left: 15%;
+	top: 16%;
+	left: 17%;
 }
 
 .right {
@@ -23,6 +23,7 @@
 	flex-direction: column;
 	gap: 1em;
 	top: 25%;
+	top: 31%;
 }
 
 .title {
@@ -66,12 +67,12 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1650px) {
 	.main {
 		font-size: 14px;
 	}
 	.right {
-		top: 22.5%;
+		top: 28%;
 	}
 }
 @media screen and (max-width: 1460px) {
@@ -84,7 +85,7 @@
 		font-size: 12px;
 	}
 	.right {
-		top: 21%;
+		top: 27%;
 	}
 }
 @media screen and (max-width: 1226px) {
@@ -92,7 +93,7 @@
 		font-size: 11px;
 	}
 	.right {
-		top: 20%;
+		top: 26%;
 	}
 }
 @media screen and (max-width: 1139px) {
