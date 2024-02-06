@@ -79,7 +79,7 @@
 	.main {
 		font-size: 13px;
 	}
-    .right {
+	.right {
 		top: 28%;
 	}
 }
@@ -139,5 +139,49 @@
 	}
 	.registerButton {
 		font-size: 1.75em;
+	}
+}
+
+
+
+@media screen and (max-height: 870px) and (max-width: 1650px) {
+	.right {
+		top: 30%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1460px) {
+	.right {
+		top: 29%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1338px) {
+	.right {
+		top: 28%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1226px) {
+	.right {
+		top: 27%;
+	}
+}
+
+@media screen and (max-height: 800px) and (max-width: 1650px) {
+	.right {
+		top: 31%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1460px) {
+	.right {
+		top: 30%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1338px) {
+	.right {
+		top: 29%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1226px) {
+	.right {
+		top: 28%;
 	}
 }
