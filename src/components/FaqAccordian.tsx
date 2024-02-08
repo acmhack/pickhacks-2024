@@ -16,13 +16,13 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
 
     useEffect(()=>{
         if(contentRef.current) {
-            contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
+            //contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
             contentRef.current.style.opacity = turn![idx] ? '100%' : '0%';
             contentRef.current.style.fontSize = turn![idx] ? '15px' : '0px';
         }
     }, [contentRef, turn, idx])
 
-    const toggleAccordian = () => {
+    const toggleAccordian = () => { //
         let newTurn = [...turn!]
         newTurn[idx] = !newTurn[idx]
         setTurn!(newTurn)
@@ -39,7 +39,7 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
                             <img src={bulletExpand.src} alt=""/> :
                             <img src={bullet.src} alt=""/> }
                         </span>
-                        <span className="question">{question}</span>
+                        <span className={styles.accordianQuestion}>{question}</span>
                     </div>
                     <div className={styles.accordianAnswer} ref={contentRef}>
                         <p>

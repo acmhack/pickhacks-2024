@@ -10,24 +10,11 @@ const Faq = () => {
 
     const [active, setActive] = useState<boolean[]>([false, false, false, false, false, false, false, false]);
 
-    const isSomeActive = active.some((element)=> element);
-
-    const handleClick = () => {
-        isSomeActive ? setActive([false, false, false, false, false, false, false, false]) : setActive([true, true, true, true, true, true, true, true])
-    }
 
 	return (
 		<div className={styles.App}>
             <p className={styles.title}>FAQ</p>
 
-            <div className={styles.duh}>
-                <button className={styles.wholethign} onClick={handleClick}>
-                    <img src={bullet.src} alt='bullet' style={{paddingRight: '10px'}}/>
-                    <span className={styles.suggestions}>
-                        {!isSomeActive ? "OpenAll" : "CloseAll"}
-                    </span>
-                </button>
-            </div>
             <div className={styles.grid}>
                 {QAData.map((el, i) => {
                     return (
