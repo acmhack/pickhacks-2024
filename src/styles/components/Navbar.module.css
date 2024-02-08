@@ -1,0 +1,115 @@
+.navbar {
+	background: url('../../../public/images/backgrounds/BackgroundNav.png');
+	background-color: #17072f;
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	opacity: 100%;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 3em;
+	height: 3em;
+}
+
+.logo {
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+	display: inline-block;
+	height: 2.5em;
+}
+
+.logo img {
+	width: 2.5em;
+	height: 2.5em;
+}
+
+.icon {
+	text-decoration: none;
+	color: white;
+}
+
+.socialitem {
+	margin-right: 20px;
+	transition: transform 200ms ease-in-out;
+}
+
+.icon img {
+	height: 1.4em;
+	width: auto;
+}
+
+.list,
+.social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.socialContainer {
+	display: flex;
+	margin-right: 2em;
+	gap: 0.6em;
+}
+
+.item {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.buttons {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 1.1em;
+	z-index: 101;
+}
+
+.buttons:visited {
+	color: white;
+}
+
+.buttons:hover {
+	color: rgb(219, 208, 219);
+}
+
+.banneritem {
+	overflow: visible;
+}
+
+.applyButton {
+	margin-left: 20px;
+	border: #ff52d2 2px solid;
+	border-radius: 2em;
+	padding: 0.3em 1em;
+	color: white;
+	font-weight: 500;
+	font-size: 1.1em;
+	z-index: 101;
+	background: linear-gradient(to left, transparent 50%, #ff52d2 50%) right;
+	background-size: 202% 100%;
+}
+
+.applyButton:hover {
+	background-position: left;
+	transition: all 0.75s ease;
+	cursor: pointer;
+}
+
+/* FIXME : kinda hardcoded right now*/
+.banneritem a img {
+	overflow: visible;
+	margin-top: 120px;
+}
+
+.socialitem:hover {
+	transform: scale(1.1);
+}
