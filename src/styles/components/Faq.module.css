@@ -20,9 +20,11 @@
 
   .grid {
     padding: 78px 353px;
-    max-height: 50vh;
+    max-height: 45vh;
     width: 100%;
-    background: rgba(0,0,0,1);
+    background: rgba(28, 13, 54,1);
+    background-image: url('../../../public/images/backgrounds/MaybeFAQ.png');
+    background-size: 100% 100%;
     display: flex;
     flex-flow: column wrap;
     gap: 40px;
@@ -37,10 +39,14 @@
 
   .accordian {
     color: #ffffff;
+    text-align: left;
+  }
+  
+  .accordianQuestion {
     font-size: 20px;
     font-weight: bold;
   }
 
   .accordianAnswer {
-    color: #ffffff;
+    font-size: 18px;
   }
