@@ -39,7 +39,7 @@ const Secret = ({question, answer, turn, setTurn, idx}: Props) => {
             <div className={styles['faq-answer']}
             style={
                 turn![idx]
-                ? { maxHeight: "135px" } :
+                ? { maxHeight: "60px" } :
                 { maxHeight: "0"}
             }>
                 <p>{answer}</p>
