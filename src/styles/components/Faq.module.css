@@ -19,7 +19,8 @@
   }
 
   .faqcontent {
-    padding: 78px 0px;
+    /*padding: 78px 0px;*/
+    padding: 78px 400px;
     /*max-height: 45vh;*/
     width: 100%;
     background: rgba(28, 13, 54,1);
@@ -60,6 +61,7 @@
 
   .accordianContent * {
     color: #ffffff;
+    text-align: left;
   }
 
   .bullet {

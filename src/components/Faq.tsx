@@ -16,7 +16,7 @@ const Faq = () => {
             <div className={styles.column}>
                 {QAData1.map((el, i) => {
                         return (
-                            <div className={styles.test} key={"questions" + i}>
+                            <div className='w-full' key={"questions" + i}>
                                 <Accordian
                                 question={el.question}
                                 answer={el.answer}

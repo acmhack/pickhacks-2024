@@ -16,7 +16,7 @@ const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
 
     useEffect(()=>{
         if(contentRef.current) {
-            contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
+            //contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
             contentRef.current.style.opacity = turn![idx] ? '100%' : '0%';
             contentRef.current.style.fontSize = turn![idx] ? '18px' : '0px';
         }
