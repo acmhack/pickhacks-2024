@@ -18,6 +18,69 @@
     margin-top: 1em;
   }
 
+  /* Secret weapon */
+  .faq-content {
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-content: flex-start;
+    flex-grow: 1;
+    z-index: 2
+  }
+
+  .faq-div {
+    width: 50%;
+    text-align: left;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .faq-bullet {
+    display: flex;
+    align-items: center;
+  }
+
+  .bullet-img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .faq-question {
+    display: inline-block;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding-left: .5vw;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .faq-question:hover {
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+    padding-left: calc(25px + .5vw);
+    padding-top: .5vw;
+    text-align: left;
+    color: #fff;
+  }
+
+  .faq-answer p {
+    padding-bottom: 2vw;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+
+
   .faqcontent {
     /*padding: 78px 0px;*/
     padding: 78px 400px;
