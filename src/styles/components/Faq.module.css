@@ -18,28 +18,52 @@
     margin-top: 1em;
   }
 
-  .grid {
-    padding: 78px 353px;
-    max-height: 45vh;
+  .faqcontent {
+    padding: 78px 0px;
+    /*max-height: 45vh;*/
     width: 100%;
     background: rgba(28, 13, 54,1);
     background-image: url('../../../public/images/backgrounds/BackgroundFaq.png');
     background-size: 100% 100%;
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
     gap: 40px;
   }
 
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+
+  .column {
+    flex: 50%;
+  }
+
   /* Accordian css */
+
+  .test {
+    display: flex;
+  }
 
   .accordianButton {
     background-color: transparent;
     border: none;
   }
 
-  .accordian {
+  .accordianContent {
     color: #ffffff;
     text-align: left;
+    padding-bottom: 24px;
+    vertical-align: top;
+  }
+
+  .accordianContent * {
+    color: #ffffff;
+  }
+
+  .bullet {
+    padding-right: 10px;
   }
   
   .accordianQuestion {
