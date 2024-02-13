@@ -10,5 +10,7 @@ import lildude from '../../public/images/LittleDude.png';
 import littlestGuy from '../../public/images/LittlestGuy.png';
 import picklogo24 from '../../public/images/Logo2024.png';
 import stars from '../../public/images/backgrounds/Stars.svg';
+import leftblur from '../../public/images/backgrounds/LeftBlur.png';
+import rightblur from '../../public/images/backgrounds/RightBlur.png';
 
-export { background2024, backgroundNav, bullet, heart, discord, instagram, linkedin, tiktok, lildude, littlestGuy, picklogo24, stars };
+export { background2024, backgroundNav, bullet, heart, discord, instagram, linkedin, tiktok, lildude, littlestGuy, picklogo24, stars, leftblur, rightblur };
