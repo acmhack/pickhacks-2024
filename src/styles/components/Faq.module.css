@@ -1,40 +1,31 @@
-.App {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5em;
+  .faq-background {
+    background: rgba(28, 13, 54,1);
+    background-image: url('../../../public/images/backgrounds/BackgroundFaq.png');
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 1vh 0;
   }
-
-  .title {
-    font-size: 72px;
-    background: linear-gradient(45deg, rgba(255,82,210,1) 0%, rgba(135,50,255,1) 63%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 5em;
-    font-weight: bold;
-    margin-bottom: .5em;
-    margin-top: 1em;
-  }
-
-  /* Secret weapon */
+  
   .faq-content {
-    padding-top: 5vh;
+    padding: 5vh 0;
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+    margin: auto;
     align-content: flex-start;
     flex-grow: 1;
-    z-index: 2
   }
 
   .faq-div {
     width: 50%;
     text-align: left;
-    padding-bottom: 2vw;
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+
+  .faq-button {
+    background-color: transparent;
+    border: none;
   }
 
   .faq-bullet {
@@ -67,7 +58,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s ease-out;
-    padding-left: calc(25px + .5vw);
+    padding-left: calc(15px + 1vw);
     padding-top: .5vw;
     text-align: left;
     color: #fff;
@@ -79,12 +70,10 @@
     font-weight: 500;
   }
 
-
-
-  .faqcontent {
-    /*padding: 78px 0px;*/
+/*   .faqcontent {
+    padding: 78px 0px;
     padding: 78px 400px;
-    /*max-height: 45vh;*/
+    max-height: 45vh;
     width: 100%;
     background: rgba(28, 13, 54,1);
     background-image: url('../../../public/images/backgrounds/BackgroundFaq.png');
@@ -103,8 +92,6 @@
   .column {
     flex: 50%;
   }
-
-  /* Accordian css */
 
   .test {
     display: flex;
@@ -138,4 +125,4 @@
 
   .accordianAnswer {
     font-size: 18px;
-  }
+  } */

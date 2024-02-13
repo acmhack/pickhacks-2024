@@ -10,10 +10,21 @@ type Props = {
     idx: number
 }
 
-const Secret = ({question, answer, turn, setTurn, idx}: Props) => {
+const Accordian = ({question, answer, turn, setTurn, idx}: Props) => {
+
+    const contentRef = useRef<HTMLDivElement>(null);
+
+    useEffect(()=>{
+        if(contentRef.current) {
+            //contentRef.current.style.maxHeight = turn![idx] ? `${contentRef.current.scrollHeight}px` : "0px";
+            contentRef.current.style.opacity = turn![idx] ? '100%' : '0%';
+            contentRef.current.style.fontSize = turn![idx] ? '18px' : '0px';
+        }
+    }, [contentRef, turn, idx])
 
     const toggleAccordian = () => { // close all other
         let newTurn = [...turn!];
+        //newTurn[idx] = !newTurn[idx]
         let turnIdx = !newTurn[idx];
         newTurn = newTurn.fill(false);
         newTurn[idx] = turnIdx;
@@ -21,30 +32,7 @@ const Secret = ({question, answer, turn, setTurn, idx}: Props) => {
     }
 
     return (
-        <div>
-            <button onClick={toggleAccordian}
-            className={styles.accordianButton}
-            style={
-                turn![idx]
-                ? { animation: '0.5s linear 0s 1 normal none running star-spin'} :
-                { animation: '0.5s linear 0s 1 normal none running star-spin-back'}}>
-            <div className={styles['faq-bullet']}>
-                { turn![idx] ?
-                <img className={styles['bullet-img']} src={bulletExpand.src} alt=""/> :
-                <img className={styles['bullet-img']} src={bullet.src} alt=""/>
-                }
-                <p className={styles['faq-question']}>{question}</p>
-            </div>
-            </button>
-            <div className={styles['faq-answer']}
-            style={
-                turn![idx]
-                ? { maxHeight: "60px" } :
-                { maxHeight: "0"}
-            }>
-                <p>{answer}</p>
-            </div>
-        {/* <div className={styles.accordianContent}>
+        <div className={styles.accordianContent}>
             <button onClick={toggleAccordian}
                     className={styles.accordianButton}>
                     <div>
@@ -61,9 +49,8 @@ const Secret = ({question, answer, turn, setTurn, idx}: Props) => {
                         </p>
                     </div>
             </button>
-        </div> */}
         </div>
     )
 }
 
-export default Secret;
+export default Accordian;
