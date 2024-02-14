@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'usehooks-ts';
 
 const Hero = () => {
-	const matches = useMediaQuery('(min-width: 1139px)');
+	const matches = useMediaQuery('(min-width: 1140px)');
 	return (
 		<div className={styles.main} id='home'>
 			{matches && (
