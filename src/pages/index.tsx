@@ -19,9 +19,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>
-				<object data={stars.src} type='image/svg+xml' className={styles.background}>
-					{/* <img src='../../public/images/backgrounds/BackgroundNav.png' /> */}
-				</object>
+				<object data={stars.src} type='image/svg+xml' className={styles.background} />
 				<Hero />
 				<div className={styles.section} id='schedule'>
 					<Title>Schedule</Title>

@@ -13,7 +13,7 @@
 	height: 47.5em;
 	width: 70em;
 	position: absolute;
-	top: 16%;
+	top: 15%;
 	left: 17%;
 }
 
@@ -23,7 +23,7 @@
 	flex-direction: column;
 	gap: 1em;
 	top: 25%;
-	top: 31%;
+	top: 32%;
 }
 
 .title {
@@ -142,7 +142,17 @@
 	}
 }
 
+@media screen and (max-height: 870px) {
+	.right {
+		top: 32%;
+	}
+}
 
+@media screen and (max-height: 800px) {
+	.right {
+		top: 35%;
+	}
+}
 
 @media screen and (max-height: 870px) and (max-width: 1650px) {
 	.right {
@@ -167,21 +177,16 @@
 
 @media screen and (max-height: 800px) and (max-width: 1650px) {
 	.right {
-		top: 31%;
-	}
-}
-@media screen and (max-height: 800px) and (max-width: 1460px) {
-	.right {
-		top: 30%;
+		top: 33%;
 	}
 }
 @media screen and (max-height: 800px) and (max-width: 1338px) {
 	.right {
-		top: 29%;
+		top: 31%;
 	}
 }
 @media screen and (max-height: 800px) and (max-width: 1226px) {
 	.right {
-		top: 28%;
+		top: 30%;
 	}
 }
