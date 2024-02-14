@@ -1,5 +1,5 @@
 import styles from '@/styles/components/Hero.module.css';
-import { lildude, flashlightguy } from '@/lib/Images';
+import { flashlightguy } from '@/lib/Images';
 import Link from 'next/link';
 import { useMediaQuery } from 'usehooks-ts';
 
