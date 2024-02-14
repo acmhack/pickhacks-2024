@@ -21,7 +21,7 @@ const Hero = () => {
 
 				<div>
 					<p className={styles.date}>Join us from April 5th - 7th!</p>
-					<Link href='' target='_blank' className={styles.registerButton}>
+					<Link href='https://www.register.pickhacks.io' target='_blank' className={styles.registerButton}>
 						REGISTER
 					</Link>
 				</div>

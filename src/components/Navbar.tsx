@@ -39,7 +39,7 @@ function Navbar() {
 							FAQ
 						</a>
 					</li>
-					<Link href='' target='_blank' className={styles.applyButton}>
+					<Link href='https://www.register.pickhacks.io' target='_blank' className={styles.applyButton}>
 						REGISTER
 					</Link>
 				</ul>
@@ -51,7 +51,7 @@ function Navbar() {
 							</a>
 						</li>
 						<li className={styles.socialitem}>
-							<a className={styles.icon} href='https://discord.gg/p3fcxGzjxa' target='_blank'>
+							<a className={styles.icon} href='https://discord.gg/weJVRv4Rk9' target='_blank'>
 								<img src={discord.src} />
 							</a>
 						</li>
