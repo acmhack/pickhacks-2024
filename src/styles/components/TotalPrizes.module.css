@@ -1,0 +1,37 @@
+.container {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-bottom: 10em;    
+    text-align: center;
+}
+
+.title {
+	background: linear-gradient(45deg, #fc77d9 0%, #a369f5 40%, #544bd6 65%, #5c52e0 92%);
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 6em;
+	font-weight: bold;
+    position: absolute;
+}
+
+.bottomtext {
+    position: relative;
+    color: white;
+    text-align: center;
+    transform: translate(0,4em);
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.container {
+		font-size: 13px;
+	}
+}
