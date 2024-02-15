@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { bullet, bulletExpand } from '@/lib/Images';
 import styles from '@/styles/components/Faq.module.css';
 
@@ -12,11 +12,9 @@ type Props = {
 
 const FaqAccordian = ({question, answer, turn, setTurn, idx}: Props) => {
 
-    const toggleAccordian = () => { // close all other
+    const toggleAccordian = () => {
         let newTurn = [...turn!];
-        let turnIdx = !newTurn[idx];
-        newTurn = newTurn.fill(false);
-        newTurn[idx] = turnIdx;
+        newTurn[idx] = !newTurn[idx]
         setTurn!(newTurn)
     }
 
@@ -36,29 +34,11 @@ const FaqAccordian = ({question, answer, turn, setTurn, idx}: Props) => {
             <div className={styles['faq-answer']}
             style={
                 turn![idx]
-                ? { maxHeight: "60px" } :
+                ? { maxHeight: "250px" } : // bc of verbose answers 60px -> 250px
                 { maxHeight: "0"}
             }>
                 <p>{answer}</p>
             </div>
-        {/* <div className={styles.accordianContent}>
-            <button onClick={toggleAccordian}
-                    className={styles.accordianButton}>
-                    <div>
-                        <span className={styles.bullet}>
-                            { turn![idx] ? 
-                            <img src={bulletExpand.src} alt=""/> :
-                            <img src={bullet.src} alt=""/> }
-                        </span>
-                        <span className={styles.accordianQuestion}>{question}</span>
-                    </div>
-                    <div className={styles.accordianAnswer} ref={contentRef}>
-                        <p>
-                            {answer}
-                        </p>
-                    </div>
-            </button>
-        </div> */}
         </div>
     )
 }
