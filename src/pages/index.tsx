@@ -7,7 +7,7 @@ import Prizes from '@/components/Prizes'
 import Hero from '@/components/Hero';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
-import { littlestGuy, stars, leftblur, rightblur } from '@/lib/Images';
+import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
 import TotalPrizes from '@/components/TotalPrizes';
 
 export default function Home() {

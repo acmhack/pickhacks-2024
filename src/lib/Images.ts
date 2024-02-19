@@ -11,6 +11,7 @@ import picklogo24 from '../../public/images/Logo2024.png';
 import stars from '../../public/images/backgrounds/Stars.svg';
 import leftblur from '../../public/images/backgrounds/LeftBlur.png';
 import rightblur from '../../public/images/backgrounds/RightBlur.png';
+import bigblur from '../../public/images/backgrounds/BigBlur.png'
 import flashlightguy from '../../public/images/FlashlightGuy.svg';
 
 export {
@@ -27,5 +28,6 @@ export {
 	stars,
 	leftblur,
 	rightblur,
+	bigblur,
 	flashlightguy
 };
