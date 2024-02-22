@@ -8,40 +8,43 @@ import styles from '@/styles/components/Team.module.css';
 import { useMediaQuery } from 'usehooks-ts';
 
 const Team = () => {
-    const firstBreakpoint = useMediaQuery('(max-width: 1024px)');
-    const secondBreakpoint = useMediaQuery('(max-width: 700px)');
-
 	const [selected, setSelected] = useState(0);
+
 	var settings = {
 		infinite: true,
 		slidesToShow: 9,
 		slidesToScroll: 1,
 		autoplay: true,
-		speed: 2500,
-		autoplaySpeed: 4500,
+		speed: 2000,
+		autoplaySpeed: 4000,
 		arrows: false,
 		pauseOnHover: true,
-        initialSlide: Members.length - 4,
+		centerMode: true,
+		initialSlide: 0,
+		centerPadding: '0px',
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1400,
 				settings: {
-					slidesToShow: 5,
-                    initialSlide: Members.length - 2,
-				},
+					slidesToShow: 7
+				}
+			},
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 5
+				}
 			},
 			{
 				breakpoint: 700,
 				settings: {
-					slidesToShow: 3,
-                    initialSlide: Members.length - 1,
-					// initialSlide: 2,
-				},
-			},
+					slidesToShow: 3
+				}
+			}
 		],
 		afterChange: (newIndex: number) => {
-			setSelected((newIndex + 4) % Members.length);
-		},
+			setSelected(newIndex);
+		}
 	};
 	return (
 		<>
@@ -49,12 +52,13 @@ const Team = () => {
 				<h2 className={styles.name}>{Members[selected].name}</h2>
 				<p className={styles.role}>{Members[selected].role}</p>
 			</div>
-
-			<Slider {...settings}>
-				{Members.map((member, i) => (
-					<Member avatar={member.avatar} linkedin={member.linkedin} index={i} key={member.name}></Member>
-				))}
-			</Slider>
+			<div className={styles.carouselContainer}>
+				<Slider {...settings}>
+					{Members.map((member, i) => (
+						<Member avatar={member.avatar} linkedin={member.linkedin} index={i} key={member.name}></Member>
+					))}
+				</Slider>
+			</div>
 		</>
 	);
 };

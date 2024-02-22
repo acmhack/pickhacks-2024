@@ -8,5 +8,15 @@
 }
 
 .role {
-	color: #9686AC;
+	color: #9686ac;
+}
+
+.carouselContainer {
+	padding: 0 10%;
+}
+
+@media screen and (max-width: 825px) {
+	.carouselContainer {
+		padding: 0;
+	}
 }
