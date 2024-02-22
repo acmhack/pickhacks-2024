@@ -5,11 +5,10 @@ function TotalPrizes () {
 	return (
 		<div className={styles.container}>
 			<div className={styles.text}>
-				<p className={styles.title}>$1010101</p>
-				<p className={styles.bottomtext}>in prize money has been awarded over 6 years.</p>
+				<p className={styles.title}>$5,500+</p>
+				<p className={styles.bottomtext}>available in prizes this year!</p>
 			</div>
 			<img src={bigblur.src} className={styles.bigBlur}></img>
-			
 		</div>
 	);
 };

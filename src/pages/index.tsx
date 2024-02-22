@@ -31,9 +31,8 @@ export default function Home() {
 				<div className={styles.section} id='prizes'>
 					<Title>Prizes</Title>
 					<Prizes/>
-					<p className={styles.fillerText}>Coming soon...</p>
+                    <TotalPrizes/>
 				</div>
-				<TotalPrizes/>
 				<div className={styles.section} id='sponsors'>
 					<Title>Sponsors</Title>
 					<p className={styles.fillerText}>Coming soon...</p>

@@ -1,0 +1,97 @@
+.container {
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgba(27, 11, 50, .6);
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.leftButton {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: 30;
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    background-color: rgba(237, 223, 255, .3);
+    padding: .75rem;
+    padding-left: .5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #F675DB;
+    backdrop-filter: blur(4px);
+    transition: padding;
+    cursor: pointer;
+    border: none;
+}
+
+.leftButton:hover {
+    padding-left: .75rem;
+}
+
+.rightButton {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 30;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    background-color: rgba(237, 223, 255, .3);
+    padding: .75rem;
+    padding-right: .5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #F675DB;
+    backdrop-filter: blur(4px);
+    transition: padding;
+    cursor: pointer;
+    transform: translate(0, -100%);
+    border: none;
+}
+
+.rightButton:hover {
+    padding-right: .75rem;
+}
+
+.cardContainer {
+    flex-shrink: 0;
+    border-radius: 1rem;
+    padding: 2em;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all cubic-bezier(.4, 0, .2, 1) 300ms;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.cardContainer:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    color: white;
+    font-size: 1.25em;
+    font-weight: medium;
+}
+
+.description {
+    color: #DED4EB;
+}
+
+.image {
+    height: 100%;
+    width: auto
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        max-width: 18rem;
+    }
+}
