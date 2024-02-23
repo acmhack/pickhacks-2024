@@ -77,10 +77,74 @@ export const Members: IMember[] = [
 		linkedin: 'https://www.linkedin.com/in/rahul-vinay/',
 		role: 'Logistics Member',
 		avatar: picklogo24.src
-	}
+	},
+	{
+		name: 'Shrija Maganti',
+		linkedin: 'https://www.linkedin.com/in/shrija-maganti/',
+		role: 'Logistics Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Jada Castille',
+		linkedin: '',
+		role: 'Logistics Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Chase Jankowski',
+		linkedin: '',
+		role: 'Logistics Member',
+		avatar: picklogo24.src
+	},
 	// Design Members
-
+	{
+		name: 'Lauren Higgins',
+		linkedin: 'https://www.linkedin.com/in/higgins7loh/',
+		role: 'Design Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Marcella Tebeau',
+		linkedin: 'https://www.linkedin.com/in/marcella-tebeau/',
+		role: 'Design Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Keith Miller',
+		linkedin: 'https://www.linkedin.com/in/keith-miller-22387424b/',
+		role: 'Design Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Joshua Kroft',
+		linkedin: '',
+		role: 'Design Member',
+		avatar: picklogo24.src
+	},
 	// Finance Members
-
+	{
+		name: 'Rahul Gopalan',
+		linkedin: 'https://www.linkedin.com/in/rahulgopalan/',
+		role: 'Finance Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Maggie Fu',
+		linkedin: 'https://linkedin.com/in/maggie-fu1809',
+		role: 'Finance Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Tyler Sanford',
+		linkedin: '',
+		role: 'Finance Member',
+		avatar: picklogo24.src
+	},
+	{
+		name: 'Danielle',
+		linkedin: '',
+		role: 'Finance Member',
+		avatar: picklogo24.src
+	},
 	// Marketing Members
 ];
