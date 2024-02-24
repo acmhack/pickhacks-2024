@@ -117,7 +117,7 @@ export const Members: IMember[] = [
 	},
 	{
 		name: 'Joshua Kroft',
-		linkedin: '',
+		linkedin: 'https://www.linkedin.com/in/joshua-kroft-b54909257/',
 		role: 'Design Member',
 		avatar: picklogo24.src
 	},
