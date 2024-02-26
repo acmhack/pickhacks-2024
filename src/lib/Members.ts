@@ -141,8 +141,8 @@ export const Members: IMember[] = [
 		avatar: picklogo24.src
 	},
 	{
-		name: 'Danielle',
-		linkedin: '',
+		name: 'Danielle Perkins',
+		linkedin: 'https://www.linkedin.com/in/danielle-perkins-cyber/',
 		role: 'Finance Member',
 		avatar: picklogo24.src
 	},
