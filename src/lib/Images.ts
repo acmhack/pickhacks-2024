@@ -13,6 +13,13 @@ import leftblur from '../../public/images/backgrounds/LeftBlur.png';
 import rightblur from '../../public/images/backgrounds/RightBlur.png';
 import bigblur from '../../public/images/backgrounds/BigBlur.png'
 import flashlightguy from '../../public/images/FlashlightGuy.svg';
+import metaquest3 from '../../public/images/prizes/metaquest3.jpg'
+import sennheiser from '../../public/images/prizes/sennheiser.png'
+import switcholed from '../../public/images/prizes/switcholed.png'
+import keyboard from '../../public/images/prizes/logitechkeyboard.png'
+import giftcard from '../../public/images/prizes/giftcard.png'
+import projector from '../../public/images/prizes/projector.jpg'
+import watch from '../../public/images/prizes/watch.png'
 
 export {
 	background2024,
@@ -29,5 +36,12 @@ export {
 	leftblur,
 	rightblur,
 	bigblur,
-	flashlightguy
+	flashlightguy,
+	metaquest3,
+	sennheiser,
+	switcholed,
+	keyboard,
+	giftcard,
+	projector,
+	watch
 };
