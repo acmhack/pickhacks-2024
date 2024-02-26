@@ -20,7 +20,7 @@ export const PrizeList: IPrize[] = [
 		id: 3,
 		img: sennheiser.src,
 		title: 'Overall 3rd',
-		description: '4x Sennheiser Accentum BT headphones',
+		description: '4x Sennheiser Accentum BT Headphones',
         link: 'https://www.amazon.com/Sennheiser-Consumer-Audio-Bluetooth-Headphones/dp/B0CHFJJNZ7/ref=sr_1_3?crid=1UCWTASC7O7E4&keywords=sennheiser%2Baccentum%2Bwireless&qid=1707013862&sprefix=sennheiser%2Baccentum%2Bwireless%2Caps%2C97&sr=8-3&th=1',
 	},
 	{
@@ -34,14 +34,14 @@ export const PrizeList: IPrize[] = [
 		id: 5,
 		img: giftcard.src,
 		title: "Best Women's",
-		description: '4x Amazon Gift Card $50',
+		description: '4x $50 Amazon Gift Card',
         link: 'https://www.amazon.com/gift-cards/b?ie=UTF8&node=2238192011',
 	},
 	{
 		id: 6,
 		img: giftcard.src,
 		title: 'Community Vote',
-		description: '4x Amazon Gift Card $50',
+		description: '4x $50 Amazon Gift Card',
         link: 'https://www.amazon.com/gift-cards/b?ie=UTF8&node=2238192011',
 	},
 	{
@@ -55,14 +55,14 @@ export const PrizeList: IPrize[] = [
 		id: 8,
 		img: projector.src,
 		title: 'Best Beginner',
-		description: '4x Projector',
+		description: '4x TMY Mini Projector',
         link: 'https://www.amazon.com/TMY-Projector-Supported-Projection-Compatible/dp/B082F13J55/ref=sr_1_1_sspa?crid=2AN5UDLAU3OY4&keywords=tmy+mini+projector&qid=1707840712&sprefix=tmy%2Caps%2C96&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1',
 	},
 	{
 		id: 9,
 		img: giftcard.src,
 		title: 'Raffle',
-		description: '1x Amazon gift card $25',
+		description: '3x $25 Amazon Gift Card',
         link: 'https://www.amazon.com/gift-cards/b?ie=UTF8&node=2238192011',
 	},
 ];

@@ -10,10 +10,12 @@ interface IProps {
 const PrizeCard = ({ title, description, image, link }: IProps) => {
 	return (
 		<div className={styles.box}>
-			<a className={styles.cardContainer} href={link} target='_blank'>
+			<a className={styles.cardContainer} href={link} target="_blank">
 				<p className={styles.title}>{title}</p>
 				<p className={styles.description}>{description}</p>
-				<img src={image} className={styles.image} />
+				<div className={styles.imageContainer}>
+					<img src={image} className={styles.image} />
+				</div>
 			</a>
 		</div>
 	);
