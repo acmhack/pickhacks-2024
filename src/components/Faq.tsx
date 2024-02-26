@@ -1,13 +1,15 @@
 import { QAData } from '@/lib/FaqData';
 import styles from '@/styles/components/Faq.module.css';
 import { useState } from 'react';
-import Accordian from '@/components/FaqAccordiansad';
 import FaqAccordian from '@/components/FaqAccordian';
+import { useMediaQuery } from 'usehooks-ts';
 
 const Faq = () => {
 
+    const matches = useMediaQuery('(max-width: 700px)');
+
     let halfIndex = (QAData.length+1)/2;
-    let QAData1 = QAData.slice(0, halfIndex); //force two columns
+    let QAData1 = QAData.slice(0, halfIndex); //force same two columns
     let QAData2 = QAData.slice(halfIndex);
 
     const [active, setActive] = useState<boolean[]>([false, false, false, false, false, false, false, false]);
