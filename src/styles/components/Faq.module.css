@@ -24,12 +24,6 @@
     padding-right: 5vw;
   }
 
-  @media screen and (max-width: 900px) {
-    .faq-div {
-      width: 100%;
-    }
-  }
-
   .faq-button {
     background-color: transparent;
     border: none;
@@ -46,7 +40,7 @@
     display: inline-block;
   }
 
-  .faq-question { /* questionable variable padding */
+  .faq-question {
     display: inline-block;
     padding-top: .5vw;
     padding-bottom: .5vw;
@@ -75,4 +69,18 @@
     padding-bottom: 2vw;
     font-size: 1.2rem;
     font-weight: 500;
+  }
+
+  @media screen and (max-width: 900px) {
+    .faq-div {
+      width: 100%;
+    }
+    .faq-question {
+      padding-top: 1vw;
+      padding-left: 1vw;
+      padding-bottom: 1vw;
+    }
+    .faq-answer p {
+      font-size: 1rem;
+    }
   }
