@@ -18,7 +18,7 @@ export const QAData: IQA[] = [
 	},
 	{
 		idx: 3,
-		question: 'Who is elgible to apply?',
+		question: 'Who is eligible to apply?',
 		answer: "Anyone who is 18+ and currently enrolled at a college or university is able to attend! You don't even have to know how to code to join! Just come in with an open mind and fun ideas to expand on, and you'll be set!",
 	},
 	{
