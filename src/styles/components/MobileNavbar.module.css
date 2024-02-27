@@ -4,6 +4,9 @@
 	padding: 1.25em 1.75em;
 	position: fixed;
 	z-index: 99;
+    background: url('../../../public/images/backgrounds/BackgroundNav.png');
+    background-size: contain;
+    background-color: #0F0420;
 }
 
 .logo {

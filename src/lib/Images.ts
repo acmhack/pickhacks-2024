@@ -26,6 +26,7 @@ export {
 	background2024,
 	backgroundNav,
 	bullet,
+    bulletExpand,
 	heart,
 	discord,
 	instagram,
