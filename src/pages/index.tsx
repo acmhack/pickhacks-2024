@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Schedule from '@/components/Schedule';
 import Prizes from '@/components/Prizes'
 import Hero from '@/components/Hero';
+import Faq from '@/components/Faq';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
 import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
@@ -43,8 +44,8 @@ export default function Home() {
 				</div>
 				<div className={styles.section} id='faq'>
 					<Title>FAQ</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
-					<div className={styles.separate} id='team'></div>
+					<Faq />
+				<div className={styles.separate} id='team'></div>
 					<Title>Team</Title>
 					<p className={styles.fillerText}>Coming soon...</p>
 				</div>
