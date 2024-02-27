@@ -9,7 +9,7 @@ export const QAData: IQA[] = [
 	{
 		idx: 1,
 		question: 'Will PickHacks happen in person or virtually?',
-		answer: 'PickHacks will be a fully in-person hackathon, hosted at the Innovation Center here on the Missouri S&T campus! We will not be offering a virtual attendance option this year.',
+		answer: 'PickHacks will be a fully in-person hackathon, hosted at the Innovation Lab here on the Missouri S&T campus! We will not be offering a virtual attendance option this year.',
 	},
 	{
 		idx: 2,
