@@ -1,15 +1,15 @@
 import styles from '@/styles/components/Hero.module.css';
-import { lildude } from '@/lib/Images';
+import { flashlightguy } from '@/lib/Images';
 import Link from 'next/link';
 import { useMediaQuery } from 'usehooks-ts';
 
 const Hero = () => {
-	const matches = useMediaQuery('(min-width: 1139px)');
+	const matches = useMediaQuery('(min-width: 1140px)');
 	return (
 		<div className={styles.main} id='home'>
 			{matches && (
 				<div className={styles.left}>
-					<img src={lildude.src} className={styles.securityGuard} alt='security guard'></img>
+					<object data={flashlightguy.src} type='image/svg+xml' className={styles.securityGuard} />
 				</div>
 			)}
 
@@ -21,7 +21,7 @@ const Hero = () => {
 
 				<div>
 					<p className={styles.date}>Join us from April 5th - 7th!</p>
-					<Link href='' target='_blank' className={styles.registerButton}>
+					<Link href='https://www.register.pickhacks.io' target='_blank' className={styles.registerButton}>
 						REGISTER
 					</Link>
 				</div>

@@ -2,13 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import { useEffect, useState } from 'react';
-import Navbar from '@/components/Navbar';
 import Schedule from '@/components/Schedule';
+import Prizes from '@/components/Prizes'
 import Hero from '@/components/Hero';
 import Faq from '@/components/Faq';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
-import { littlestGuy, stars } from '@/lib/Images';
+import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
+import TotalPrizes from '@/components/TotalPrizes';
 
 export default function Home() {
 	return (
@@ -20,17 +21,18 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>
-				<object data={stars.src} type='image/svg+xml' className={styles.background}>
-					<img src='../../public/images/backgrounds/BackgroundNav.png' />
-				</object>
+				<object data={stars.src} type='image/svg+xml' className={styles.background} />
 				<Hero />
 				<div className={styles.section} id='schedule'>
 					<Title>Schedule</Title>
 					<Schedule />
+                    <img src={leftblur.src} className={styles.leftBlur}></img>
+                    <img src={rightblur.src} className={styles.rightBlur}></img>
 				</div>
 				<div className={styles.section} id='prizes'>
 					<Title>Prizes</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
+					<Prizes/>
+                    <TotalPrizes/>
 				</div>
 				<div className={styles.section} id='sponsors'>
 					<Title>Sponsors</Title>

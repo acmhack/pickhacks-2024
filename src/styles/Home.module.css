@@ -30,3 +30,16 @@
 .separate {
 	margin-top: 20em;
 }
+
+.leftBlur {
+    position: absolute;
+    bottom: -10em;
+    left: 0;
+    z-index: 0;
+}
+.rightBlur {
+    position: absolute;
+    top: -10em;
+    right: 0;
+    z-index: 0;
+}
