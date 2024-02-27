@@ -88,7 +88,7 @@
 	}
 	.faq-question {
 		padding-left: .75em;
-        white-space: wrap;
+        white-space: normal;
         text-align: left;
 	}
     .answerContainer {
