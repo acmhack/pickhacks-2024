@@ -1,13 +1,18 @@
 import styles from '@/styles/components/Hero.module.css';
 import { lildude } from '@/lib/Images';
 import Link from 'next/link';
+import { useMediaQuery } from 'usehooks-ts';
 
 const Hero = () => {
+	const matches = useMediaQuery('(min-width: 1139px)');
 	return (
-		<div className={styles.main}>
-			<div className={styles.left}>
-				<img src={lildude.src} className={styles.securityGuard} alt='security guard'></img>
-			</div>
+		<div className={styles.main} id='home'>
+			{matches && (
+				<div className={styles.left}>
+					<img src={lildude.src} className={styles.securityGuard} alt='security guard'></img>
+				</div>
+			)}
+
 			<div className={styles.right}>
 				<div>
 					<p className={styles.title}>PickHacks 2024</p>

@@ -1,36 +1,41 @@
-import { IQA } from '@/interfaces/IQA';
 import { QAData } from '@/lib/FaqData';
 import styles from '@/styles/components/Faq.module.css';
-import { bullet, bulletExpand } from '@/lib/Images';
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Accordian from '@/components/FaqAccordian';
+import { useState } from 'react';
+import FaqAccordian from '@/components/FaqAccordian';
+import { useMediaQuery } from 'usehooks-ts';
 
 const Faq = () => {
+	const matches = useMediaQuery('(max-width: 700px)');
 
-    const [active, setActive] = useState<boolean[]>([false, false, false, false, false, false, false, false]);
+	let halfIndex = (QAData.length + 1) / 2;
+	let QAData1 = QAData.slice(0, halfIndex); //force same two columns
+	let QAData2 = QAData.slice(halfIndex);
 
+	const [active, setActive] = useState<boolean[]>([false, false, false, false, false, false, false, false]);
 
 	return (
-		<div className={styles.App}>
-            <p className={styles.title}>FAQ</p>
-
-            <div className={styles.grid}>
-                {QAData.map((el, i) => {
-                    return (
-                        <div className='w-full' key={"questions" + i}>
-                            <Accordian
-                            question={el.question}
-                            answer={el.answer}
-                            turn={active}
-                            setTurn={setActive}
-                            idx={el.idx}
-                            />
-                        </div>
-                    )
-                })}
-            </div>
-
+		<div className={styles['faq-background']}>
+			<div className={styles['faq-content']}>
+				<div className={styles['faq-div']}>
+					{QAData1.map((el, i) => {
+						return <FaqAccordian question={el.question} answer={el.answer} turn={active} setTurn={setActive} idx={el.idx} key={'questions' + i} />;
+					})}
+				</div>
+				<div className={styles['faq-div']}>
+					{QAData2.map((el, i) => {
+						return (
+							<FaqAccordian
+								question={el.question}
+								answer={el.answer}
+								turn={active}
+								setTurn={setActive}
+								idx={el.idx}
+								key={'questions' + (i + halfIndex)}
+							/>
+						);
+					})}
+				</div>
+			</div>
 		</div>
 	);
 };

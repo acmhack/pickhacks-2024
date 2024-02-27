@@ -1,0 +1,25 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.title {
+	background: linear-gradient(45deg, #fc77d9 0%, #a369f5 40%, #544bd6 65%, #5c52e0 92%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.container {
+		font-size: 13px;
+	}
+}

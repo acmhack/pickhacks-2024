@@ -1,0 +1,32 @@
+.main {
+	/* overflow-y: hidden; */
+}
+
+.background {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+}
+
+.section {
+	min-height: 100vh;
+	padding-top: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 1em;
+}
+
+.fillerText {
+	color: #9686ac;
+	font-size: 1.5em;
+}
+
+.smallGuySection {
+	display: flex;
+	margin-left: 10em;
+}
+
+.separate {
+	margin-top: 20em;
+}

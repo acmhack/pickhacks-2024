@@ -2,9 +2,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import { useEffect, useState } from 'react';
+import Navbar from '@/components/Navbar';
 import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
 import Faq from '@/components/Faq';
+import Title from '@/components/Title';
+import Footer from '@/components/Footer';
+import { littlestGuy, stars } from '@/lib/Images';
 
 export default function Home() {
 	return (
@@ -15,11 +19,39 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className={`${styles.main}`}>
+			<main className={styles.main}>
+				<object data={stars.src} type='image/svg+xml' className={styles.background}>
+					<img src='../../public/images/backgrounds/BackgroundNav.png' />
+				</object>
 				<Hero />
-				<Schedule />
-				<Faq />
+				<div className={styles.section} id='schedule'>
+					<Title>Schedule</Title>
+					<Schedule />
+				</div>
+				<div className={styles.section} id='prizes'>
+					<Title>Prizes</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='sponsors'>
+					<Title>Sponsors</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='partners'>
+					<Title>Partners</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.section} id='faq'>
+					<Title>FAQ</Title>
+					<Faq />
+				<div className={styles.separate} id='team'></div>
+					<Title>Team</Title>
+					<p className={styles.fillerText}>Coming soon...</p>
+				</div>
+				<div className={styles.smallGuySection}>
+					<img src={littlestGuy.src} />
+				</div>
 			</main>
+			<Footer />
 		</>
 	);
 }

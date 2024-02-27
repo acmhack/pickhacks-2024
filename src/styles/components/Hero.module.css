@@ -5,16 +5,16 @@
 
 .left {
 	flex: 1;
-    justify-content: right;
-    display: flex;
+	justify-content: right;
+	display: flex;
 }
 
 .securityGuard {
-    height: 47.5em;
-    width: 70em;
-    position: absolute;
-    top: 10%;
-    left: 15%;
+	height: 47.5em;
+	width: 70em;
+	position: absolute;
+	top: 16%;
+	left: 17%;
 }
 
 .right {
@@ -22,13 +22,15 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-    top: 25%;
+	top: 25%;
+	top: 31%;
 }
 
 .title {
 	font-size: 6.75em;
+	left: -0.06em;
 	font-weight: bold;
-	background: linear-gradient(45deg, #FC77D9 0%, #A369F5 40%, #544BD6 65%, #5C52E0 92%);
+	background: linear-gradient(45deg, #fc77d9 0%, #a369f5 40%, #544bd6 65%, #5c52e0 92%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	line-height: 0.95em;
@@ -55,9 +57,131 @@
 	font-size: 1.3em;
 	font-weight: 500;
 	display: inline-block;
+	background: linear-gradient(to left, transparent 50%, #ff52d2 50%) right;
+	background-size: 202% 100%;
 }
 
 .registerButton:hover {
-	background-color: #ff52d2;
-	transition: background-color 0.3s ease-out;
+	background-position: left;
+	transition: all 0.75s ease;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1650px) {
+	.main {
+		font-size: 14px;
+	}
+	.right {
+		top: 28.75%;
+	}
+}
+@media screen and (max-width: 1460px) {
+	.main {
+		font-size: 13px;
+	}
+	.right {
+		top: 28%;
+	}
+}
+@media screen and (max-width: 1338px) {
+	.main {
+		font-size: 12px;
+	}
+	.right {
+		top: 27%;
+	}
+}
+@media screen and (max-width: 1226px) {
+	.main {
+		font-size: 11px;
+	}
+	.right {
+		top: 26%;
+	}
+}
+@media screen and (max-width: 1139px) {
+	.main {
+		font-size: 1.6vw;
+	}
+	.title {
+		left: 0;
+	}
+	.right {
+		top: 0%;
+		justify-content: center;
+		align-items: center;
+	}
+	.right div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.registerButton {
+		background-color: #0f0420;
+	}
+	.date {
+		margin-bottom: 0.5em;
+	}
+}
+@media screen and (max-width: 550px) {
+	.main {
+		font-size: 2.4vw;
+	}
+	.title {
+		text-align: center;
+	}
+	.subtitle {
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	.date {
+		font-size: 2.5em;
+	}
+	.registerButton {
+		font-size: 1.75em;
+	}
+}
+
+
+
+@media screen and (max-height: 870px) and (max-width: 1650px) {
+	.right {
+		top: 30%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1460px) {
+	.right {
+		top: 29%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1338px) {
+	.right {
+		top: 28%;
+	}
+}
+@media screen and (max-height: 870px) and (max-width: 1226px) {
+	.right {
+		top: 27%;
+	}
+}
+
+@media screen and (max-height: 800px) and (max-width: 1650px) {
+	.right {
+		top: 31%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1460px) {
+	.right {
+		top: 30%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1338px) {
+	.right {
+		top: 29%;
+	}
+}
+@media screen and (max-height: 800px) and (max-width: 1226px) {
+	.right {
+		top: 28%;
+	}
 }
