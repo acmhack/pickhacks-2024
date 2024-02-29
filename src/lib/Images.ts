@@ -21,6 +21,7 @@ import keyboard from '../../public/images/prizes/logitechkeyboard.png'
 import giftcard from '../../public/images/prizes/giftcard.png'
 import projector from '../../public/images/prizes/projector.jpg'
 import watch from '../../public/images/prizes/watch.png'
+import sponsor from '../../public/images/sponsors/white_square.png'
 
 export {
 	background2024,
@@ -45,5 +46,6 @@ export {
 	keyboard,
 	giftcard,
 	projector,
-	watch
+	watch,
+	sponsor
 };
