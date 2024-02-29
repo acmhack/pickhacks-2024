@@ -6,6 +6,7 @@ import Schedule from '@/components/Schedule';
 import Prizes from '@/components/Prizes'
 import Hero from '@/components/Hero';
 import Faq from '@/components/Faq';
+import Sponsors from '@/components/Sponsors';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
 import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
@@ -36,7 +37,7 @@ export default function Home() {
 				</div>
 				<div className={styles.section} id='sponsors'>
 					<Title>Sponsors</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
+					<Sponsors/>
 				</div>
 				<div className={styles.section} id='partners'>
 					<Title>Partners</Title>
