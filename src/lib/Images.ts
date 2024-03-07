@@ -21,7 +21,8 @@ import keyboard from '../../public/images/prizes/logitechkeyboard.png'
 import giftcard from '../../public/images/prizes/giftcard.png'
 import projector from '../../public/images/prizes/projector.jpg'
 import watch from '../../public/images/prizes/watch.png'
-import sponsor from '../../public/images/sponsors/white_square.png'
+import tradebot from '../../public/images/sponsors/TradebotLogo.png'
+import accenture from '../../public/images/sponsors/AccentureLogo.png'
 
 export {
 	background2024,
@@ -47,5 +48,6 @@ export {
 	giftcard,
 	projector,
 	watch,
-	sponsor
+	tradebot,
+	accenture
 };
