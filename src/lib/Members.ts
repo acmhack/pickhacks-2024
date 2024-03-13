@@ -1,5 +1,5 @@
 import { IMember } from '@/interfaces/IMember';
-import { littlestGuy, bullet, picklogo24 } from './Images';
+import { littlestGuy, bullet, picklogo24, rahulg, maggief, tyler, daniellep, joshuak, keithm, marcellat, chase, jadac, rahulv, nathand, lindseyc, ericd, everetty, jasonx, ericw, vishaanthm } from './Images';
 
 export const Members: IMember[] = [
 	// Director
@@ -7,14 +7,14 @@ export const Members: IMember[] = [
 		name: 'Vishaanth Muddu',
 		linkedin: 'https://www.linkedin.com/in/vishaanth-muddu',
 		role: 'Director',
-		avatar: littlestGuy.src
+		avatar: vishaanthm.src
 	},
 	// Team Leads
 	{
 		name: 'Eric Wong',
 		linkedin: 'https://www.linkedin.com/in/ewbyf/',
 		role: 'Development Lead',
-		avatar: littlestGuy.src
+		avatar: ericw.src
 	},
 	{
 		name: 'Shrija Maganti',
@@ -27,13 +27,13 @@ export const Members: IMember[] = [
 		name: 'Jason Xu',
 		linkedin: 'https://www.linkedin.com/in/jason-xu-317585220/',
 		role: 'Development Member',
-		avatar: bullet.src
+		avatar: jasonx.src
 	},
 	{
 		name: 'Everett Yan',
 		linkedin: 'https://www.linkedin.com/in/ezybg7/',
 		role: 'Development Member',
-		avatar: picklogo24.src
+		avatar: everetty.src
 	},
 	{
 		name: 'Reid Haegele',
@@ -45,7 +45,7 @@ export const Members: IMember[] = [
 		name: 'Eric Duong',
 		linkedin: 'https://www.linkedin.com/in/eric-duong-939604241',
 		role: 'Development Member',
-		avatar: picklogo24.src
+		avatar: ericd.src
 	},
 	{
 		name: 'Tung Nguyen',
@@ -64,19 +64,19 @@ export const Members: IMember[] = [
 		name: 'Lindsey Chan',
 		linkedin: 'https://www.linkedin.com/in/lindsey-chan/',
 		role: 'Logistics Member',
-		avatar: picklogo24.src
+		avatar: lindseyc.src
 	},
 	{
 		name: 'Nathan Derucki',
 		linkedin: 'https://www.linkedin.com/in/nathan-derucki/',
 		role: 'Logistics Member',
-		avatar: picklogo24.src
+		avatar: nathand.src
 	},
 	{
 		name: 'Rahul Vinay',
 		linkedin: 'https://www.linkedin.com/in/rahul-vinay/',
 		role: 'Logistics Member',
-		avatar: picklogo24.src
+		avatar: rahulv.src
 	},
 	{
 		name: 'Shrija Maganti',
@@ -86,15 +86,15 @@ export const Members: IMember[] = [
 	},
 	{
 		name: 'Jada Castille',
-		linkedin: '',
+		linkedin: 'https://www.linkedin.com/in/jada-castile-1208a6291',
 		role: 'Logistics Member',
-		avatar: picklogo24.src
+		avatar: jadac.src
 	},
 	{
 		name: 'Chase Jankowski',
-		linkedin: '',
+		linkedin: 'https://www.linkedin.com/in/chase-jankowski-52553428a/',
 		role: 'Logistics Member',
-		avatar: picklogo24.src
+		avatar: chase.src
 	},
 	// Design Members
 	{
@@ -107,44 +107,44 @@ export const Members: IMember[] = [
 		name: 'Marcella Tebeau',
 		linkedin: 'https://www.linkedin.com/in/marcella-tebeau/',
 		role: 'Design Member',
-		avatar: picklogo24.src
+		avatar: marcellat.src
 	},
 	{
 		name: 'Keith Miller',
 		linkedin: 'https://www.linkedin.com/in/keith-miller-22387424b/',
 		role: 'Design Member',
-		avatar: picklogo24.src
+		avatar: keithm.src
 	},
 	{
 		name: 'Joshua Kroft',
 		linkedin: 'https://www.linkedin.com/in/joshua-kroft-b54909257/',
 		role: 'Design Member',
-		avatar: picklogo24.src
+		avatar: joshuak.src
 	},
 	// Finance Members
 	{
 		name: 'Rahul Gopalan',
 		linkedin: 'https://www.linkedin.com/in/rahulgopalan/',
 		role: 'Finance Member',
-		avatar: picklogo24.src
+		avatar: rahulg.src
 	},
 	{
 		name: 'Maggie Fu',
 		linkedin: 'https://linkedin.com/in/maggie-fu1809',
 		role: 'Finance Member',
-		avatar: picklogo24.src
+		avatar: maggief.src
 	},
 	{
 		name: 'Tyler Sanford',
-		linkedin: '',
+		linkedin: 'http://www.linkedin.com/in/tyler-sanford-1249402b7',
 		role: 'Finance Member',
-		avatar: picklogo24.src
+		avatar: tyler.src
 	},
 	{
 		name: 'Danielle Perkins',
 		linkedin: 'https://www.linkedin.com/in/danielle-perkins-cyber/',
 		role: 'Finance Member',
-		avatar: picklogo24.src
+		avatar: daniellep.src
 	},
 	// Marketing Members
 ];
