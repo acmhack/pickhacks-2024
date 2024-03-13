@@ -20,7 +20,7 @@ import everetty from '../../public/images/avatars/everetty.png';
 import jadac from '../../public/images/avatars/jadac.png';
 import jasonx from '../../public/images/avatars/jasonx.png';
 import joshuak from '../../public/images/avatars/joshuak.png';
-import keithm from '../../public/images/avatars/keithm.png';
+import mattm from '../../public/images/avatars/mattm.png';
 import lindseyc from '../../public/images/avatars/lindseyc.png';
 import maggief from '../../public/images/avatars/maggief.png';
 import marcellat from '../../public/images/avatars/marcellat.png';
@@ -54,7 +54,7 @@ export {
 	jadac,
 	jasonx,
 	joshuak,
-	keithm,
+	mattm,
 	lindseyc,
 	maggief,
 	marcellat,
