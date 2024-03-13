@@ -1,7 +1,8 @@
 .background {
 	position: absolute;
 	z-index: 0;
-	height: 100%;
+	object-fit: cover;
+	height: 600vh;
 }
 
 .section {
@@ -28,14 +29,15 @@
 }
 
 .leftBlur {
-    position: absolute;
-    bottom: -10em;
-    left: 0;
-    z-index: 0;
+	position: absolute;
+	/* bottom: -10em; */
+	top: 20em;
+	left: 0;
+	z-index: 0;
 }
 .rightBlur {
-    position: absolute;
-    top: -10em;
-    right: 0;
-    z-index: 0;
+	position: absolute;
+	top: -10em;
+	right: 0;
+	z-index: 0;
 }

@@ -32,7 +32,7 @@ const Schedule = () => {
 				))}
 			</div>
 			{currData.map((obj) => (
-				<div key={`${obj.day}-${obj.event}`} className={styles.eventContainer}>
+				<div key={`${obj.day}-${obj.event}-${obj.time}`} className={styles.eventContainer}>
 					<div className={styles.column}>
 						<p className={styles.event}>{obj.event}</p>
 						<p className={styles.time}>{obj.time}</p>

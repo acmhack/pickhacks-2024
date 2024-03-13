@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 import Schedule from '@/components/Schedule';
 import Prizes from '@/components/Prizes';
 import Hero from '@/components/Hero';
+import Faq from '@/components/Faq';
 import Title from '@/components/Title';
 import Footer from '@/components/Footer';
-import { littlestGuy, stars, leftblur, rightblur } from '@/lib/Images';
+import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
 import TotalPrizes from '@/components/TotalPrizes';
 import Team from '@/components/Team';
 
@@ -31,11 +32,10 @@ export default function Home() {
 				</div>
 				<div className={styles.section} id="prizes">
 					<Title>Prizes</Title>
-					<Prizes />
-					<p className={styles.fillerText}>Coming soon...</p>
+					<Prizes/>
+          <TotalPrizes/>
 				</div>
-				<TotalPrizes />
-				<div className={styles.section} id="sponsors">
+				<div className={styles.section} id='sponsors'>
 					<Title>Sponsors</Title>
 					<p className={styles.fillerText}>Coming soon...</p>
 				</div>
@@ -45,15 +45,11 @@ export default function Home() {
 				</div>
 				<div className={styles.section} id="faq">
 					<Title>FAQ</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
-                    
-					<div className={styles.separate} id="team"></div>
-            
+					<Faq />
 					<div style={{ width: '100%', padding: '20px' }}>
 						<Title>Team</Title>
 						<Team></Team>
 					</div>
-				</div>
 
 				<div className={styles.smallGuySection}>
 					<img src={littlestGuy.src} />
