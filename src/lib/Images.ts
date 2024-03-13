@@ -54,7 +54,6 @@ export {
 	stars,
 	leftblur,
 	rightblur,
-	flashlightguy,
 	chase,
 	daniellep,
 	ericd,
@@ -71,7 +70,7 @@ export {
 	rahulg,
 	rahulv,
 	tyler,
-	vishaanthm
+	vishaanthm,
 	bigblur,
 	flashlightguy,
 	metaquest3,
