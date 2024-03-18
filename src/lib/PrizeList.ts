@@ -48,8 +48,8 @@ export const PrizeList: IPrize[] = [
 		id: 7,
 		img: watch.src,
 		title: 'Best Solo',
-		description: '1x Amazfit GTR 3 Pro',
-        link: 'https://us.amazfit.com/products/amazfit-gtr-3-pro',
+		description: '1x Fitbit Charge 5',
+        link: 'https://www.amazon.com/dp/B09BXDZ9BD?starsLeft=1&ref_=cm_sw_r_cso_cp_apin_dp_9Z6AEKZ89TV9336QMXFM',
 	},
 	{
 		id: 8,
