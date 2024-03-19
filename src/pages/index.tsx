@@ -12,6 +12,7 @@ import Footer from '@/components/Footer';
 import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
 import TotalPrizes from '@/components/TotalPrizes';
 import Partners from '@/components/Partners';
+import Team from '@/components/Team';
 
 export default function Home() {
 	return (
@@ -47,9 +48,10 @@ export default function Home() {
 				<div className={styles.section} id="faq">
 					<Title>FAQ</Title>
 					<Faq />
-					<div className={styles.separate} id="team"></div>
-					<Title>Team</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
+					<div style={{ width: '100%', padding: '20px', marginTop: '5em' }}>
+						<Title>Team</Title>
+						<Team></Team>
+					</div>
 				</div>
 				<div className={styles.smallGuySection}>
 					<img src={littlestGuy.src} />
