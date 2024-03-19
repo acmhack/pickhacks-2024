@@ -1,9 +1,8 @@
+import { discord, instagram, linkedin, picklogo24, tiktok } from '@/lib/Images';
 import styles from '@/styles/components/MobileNavbar.module.css';
-import { useState } from 'react';
-import { IoMenu } from 'react-icons/io5';
-import { IoClose } from 'react-icons/io5';
-import { picklogo24, discord, instagram, linkedin, tiktok } from '@/lib/Images';
 import Link from 'next/link';
+import { useState } from 'react';
+import { IoClose, IoMenu } from 'react-icons/io5';
 
 const MobileNavbar = () => {
 	const [open, setOpen] = useState(false);
@@ -41,11 +40,11 @@ const MobileNavbar = () => {
 				<a href='#sponsors' className={styles.navbarOption} onClick={() => setOpen(false)}>
 					Sponsors
 				</a>
-				<a href='#team' className={styles.navbarOption} onClick={() => setOpen(false)}>
-					Team
-				</a>
 				<a href='#faq' className={styles.navbarOption} onClick={() => setOpen(false)}>
 					FAQ
+				</a>
+				<a href='#team' className={styles.navbarOption} onClick={() => setOpen(false)}>
+					Team
 				</a>
 				<Link href='' target='_blank' className={styles.registerButton}>
 					REGISTER
