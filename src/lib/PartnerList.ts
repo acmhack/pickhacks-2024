@@ -1,13 +1,21 @@
 import { ISponsor } from "@/interfaces/ISponsor";
-import { tradebot } from "./Images";
+import { mosystems, mlh, standoutstickers, stuco } from "./Images";
 
-export const PartnerList: ISponsor[] = [
+export const PartnerList: ISponsor[] = [ //placeholder links
     {
-        link: '',
-        logo: tradebot.src
+        logo: mlh.src,
+        link: 'https://mlh.io/'
     },
     {
-        link: '',
-        logo: ''
+        logo: standoutstickers.src,
+        link: 'https://www.standoutstickers.com/'
+    },
+    {
+        logo: mosystems.src,
+        link: 'https://www.umsystem.edu/'
+    },
+    {
+        logo: stuco.src,
+        link: 'https://stuco.mst.edu/'
     },
 ]
