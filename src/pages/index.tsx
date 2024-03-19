@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import { useEffect, useState } from 'react';
 import Schedule from '@/components/Schedule';
 import Prizes from '@/components/Prizes';
 import Hero from '@/components/Hero';
