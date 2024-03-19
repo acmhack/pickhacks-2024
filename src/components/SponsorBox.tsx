@@ -9,14 +9,14 @@ interface IProps {
 
 const SponsorBox = ({ link, logo, tier }: IProps) => {
 	return (
-		<a className={styles.sponsorBox} href={link} target="_blank">
+		<a className={styles.sponsorBox} href={link} target='_blank'>
 			<div
 				className={styles.imageContainer}
 				style={
 					tier === 'Gold'
-						? { width: '20em', height: '10em' }
+						? { width: '21em', height: '10em' }
 						: tier === 'Silver'
-						? { width: '18em', height: '8em' }
+						? { width: '18em', height: '8.5em' }
 						: { width: '15em', height: '7em' }
 				}
 			>
