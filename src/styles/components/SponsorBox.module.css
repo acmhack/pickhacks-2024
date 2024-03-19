@@ -1,0 +1,34 @@
+.sponsorBox::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	bottom: -2px;
+	left: -4px;
+	border-width: 5px;
+	border-style: solid;
+	border-image: linear-gradient(to bottom, #fd52d3, #1022e8);
+	border-image-slice: 1;
+}
+
+.sponsorBox:hover {
+	transform: scale(1.025);
+}
+
+.imageContainer {
+	background-color: white;
+	width: 20em;
+	height: 10em;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}
+
+.logo {
+	object-fit: contain;
+	max-height: 100%;
+	max-width: 100%;
+}

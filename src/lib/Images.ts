@@ -1,6 +1,7 @@
 import background2024 from '../../public/images/backgrounds/Background2024.png';
 import backgroundNav from '../../public/images/backgrounds/BackgroundNav.png';
 import bullet from '../../public/images/icons/Bullet.png';
+import bulletExpand from '../../public/images/icons/BulletExpanded.png';
 import heart from '../../public/images/icons/Heart.png';
 import discord from '../../public/images/icons/IconDiscord.png';
 import instagram from '../../public/images/icons/IconInstagram.png';
@@ -13,11 +14,21 @@ import leftblur from '../../public/images/backgrounds/LeftBlur.png';
 import rightblur from '../../public/images/backgrounds/RightBlur.png';
 import bigblur from '../../public/images/backgrounds/BigBlur.png'
 import flashlightguy from '../../public/images/FlashlightGuy.svg';
+import metaquest3 from '../../public/images/prizes/metaquest3.jpg'
+import sennheiser from '../../public/images/prizes/sennheiser.png'
+import switcholed from '../../public/images/prizes/switcholed.png'
+import keyboard from '../../public/images/prizes/logitechkeyboard.png'
+import giftcard from '../../public/images/prizes/giftcard.png'
+import projector from '../../public/images/prizes/projector.jpg'
+import watch from '../../public/images/prizes/watch.png'
+import tradebot from '../../public/images/sponsors/TradebotLogo.png'
+import accenture from '../../public/images/sponsors/AccentureLogo.png'
 
 export {
 	background2024,
 	backgroundNav,
 	bullet,
+    bulletExpand,
 	heart,
 	discord,
 	instagram,
@@ -29,5 +40,14 @@ export {
 	leftblur,
 	rightblur,
 	bigblur,
-	flashlightguy
+	flashlightguy,
+	metaquest3,
+	sennheiser,
+	switcholed,
+	keyboard,
+	giftcard,
+	projector,
+	watch,
+	tradebot,
+	accenture
 };
