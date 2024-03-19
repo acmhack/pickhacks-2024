@@ -38,6 +38,16 @@ import keyboard from '../../public/images/prizes/logitechkeyboard.png'
 import giftcard from '../../public/images/prizes/giftcard.png'
 import projector from '../../public/images/prizes/projector.jpg'
 import watch from '../../public/images/prizes/watch.png'
+import tradebot from '../../public/images/sponsors/TradebotLogo.png'
+import accenture from '../../public/images/sponsors/AccentureLogo.png'
+import shelter from '../../public/images/sponsors/ShelterLogo.png'
+import johndeere from '../../public/images/sponsors/JohnDeereLogo.jpg'
+import sandia from '../../public/images/sponsors/SandiaLogo.png'
+import nsc from '../../public/images/sponsors/NSCLogo.png'
+import mosystems from '../../public/images/partners/missouri-systems-logo.png'
+import mlh from '../../public/images/partners/mlh-logo.png'
+import standoutstickers from '../../public/images/partners/stand-out-stickers-logo.png'
+import stuco from '../../public/images/partners/student-council-logo.jpg'
 
 export {
 	background2024,
@@ -79,5 +89,15 @@ export {
 	keyboard,
 	giftcard,
 	projector,
-	watch
+	watch,
+	tradebot,
+	accenture,
+	shelter,
+	johndeere,
+	sandia,
+	nsc,
+	mosystems,
+	mlh,
+	standoutstickers,
+	stuco
 };

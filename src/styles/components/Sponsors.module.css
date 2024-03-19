@@ -1,0 +1,40 @@
+.becomeButtonContainer {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2.5em;
+}
+
+.becomeButton {
+	padding: 0.5em 1.5em;
+	background-color: transparent;
+	border: #ff52d2 2px solid;
+	border-radius: 2em;
+	color: white;
+	font-size: 1.3em;
+	display: inline-block;
+	background: linear-gradient(to left, transparent 50%, #ff52d2 50%) right;
+	background-size: 202% 100%;
+}
+
+.becomeButton:hover {
+	background-position: left;
+	transition: all 0.75s ease;
+	cursor: pointer;
+}
+
+.sponsorContainer {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 3em;
+}
+
+.sponsorRow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2em;
+}
