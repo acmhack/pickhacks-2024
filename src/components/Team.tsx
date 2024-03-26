@@ -6,6 +6,25 @@ import { Members } from '@/lib/Members';
 import Member from './Member';
 import styles from '@/styles/components/Team.module.css';
 import { useMediaQuery } from 'usehooks-ts';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+
+function PrevArrow(props: any) {
+	const { className, style, onClick } = props;
+	return (
+		<div className={styles.leftButton} style={{ ...style, display: 'block' }} onClick={onClick}>
+			<FiChevronLeft />
+		</div>
+	);
+}
+
+function NextArrow(props: any) {
+	const { className, style, onClick } = props;
+	return (
+		<div className={styles.rightButton} style={{ ...style, display: 'block' }} onClick={onClick}>
+			<FiChevronRight />
+		</div>
+	);
+}
 
 const Team = () => {
 	const [selected, setSelected] = useState(0);
@@ -16,8 +35,11 @@ const Team = () => {
 		slidesToScroll: 1,
 		autoplay: true,
 		speed: 2000,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
 		autoplaySpeed: 4000,
-		arrows: false,
+		arrows: true,
+		draggable: false,
 		pauseOnHover: true,
 		centerMode: true,
 		initialSlide: 0,
@@ -26,25 +48,31 @@ const Team = () => {
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 7
-				}
+					slidesToShow: 7,
+				},
 			},
 			{
 				breakpoint: 1100,
 				settings: {
-					slidesToShow: 5
-				}
+					slidesToShow: 5,
+				},
 			},
 			{
 				breakpoint: 700,
 				settings: {
-					slidesToShow: 3
-				}
-			}
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
 		],
 		afterChange: (newIndex: number) => {
 			setSelected(newIndex);
-		}
+		},
 	};
 	return (
 		<>
@@ -53,7 +81,7 @@ const Team = () => {
 				<p className={styles.role}>{Members[selected].role}</p>
 			</div>
 			<div className={styles.carouselContainer}>
-				<Slider {...settings}>
+				<Slider {...settings} className={styles.inner}>
 					{Members.map((member, i) => (
 						<Member avatar={member.avatar} linkedin={member.linkedin} index={i} key={member.name}></Member>
 					))}

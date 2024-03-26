@@ -31,6 +31,7 @@ const Prizes = () => {
 		slidesToShow: 4,
 		slidesToScroll: 4,
 		speed: 1500,
+        draggable: false,
 		arrows: true,
 		initialSlide: 0,
 		centerPadding: '0px',
