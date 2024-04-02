@@ -30,13 +30,13 @@ function Navbar() {
 						</a>
 					</li>
 					<li className={styles.item}>
-						<a className={styles.buttons} href='#team'>
-							Team
+						<a className={styles.buttons} href='#faq'>
+							FAQ
 						</a>
 					</li>
 					<li className={styles.item}>
-						<a className={styles.buttons} href='#faq'>
-							FAQ
+						<a className={styles.buttons} href='#team'>
+							Team
 						</a>
 					</li>
 					<Link href='https://www.register.pickhacks.io' target='_blank' className={styles.applyButton}>

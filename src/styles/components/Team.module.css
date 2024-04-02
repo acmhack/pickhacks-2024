@@ -1,0 +1,74 @@
+.textContainer {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.name {
+	color: white;
+}
+
+.role {
+	color: #9686ac;
+}
+
+.carouselContainer {
+	width: 100%;
+}
+
+.leftButton {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 30;
+	border-top-right-radius: 0.75rem;
+	border-bottom-right-radius: 0.75rem;
+	background-color: rgba(237, 223, 255, 0.3);
+	padding: 0.75rem;
+	padding-left: 0.5rem;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	color: #f675db;
+	backdrop-filter: blur(4px);
+	transition: padding;
+	cursor: pointer;
+	border: none;
+	transform: translate(0, -50%);
+}
+
+.leftButton:hover {
+	padding-left: 0.75rem;
+}
+
+.rightButton {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 30;
+	border-top-left-radius: 0.75rem;
+	border-bottom-left-radius: 0.75rem;
+	background-color: rgba(237, 223, 255, 0.3);
+	padding: 0.75rem;
+	padding-right: 0.5rem;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	color: #f675db;
+	backdrop-filter: blur(4px);
+	transition: padding;
+	cursor: pointer;
+	transform: translate(0, -50%);
+	border: none;
+}
+
+.rightButton:hover {
+	padding-right: 0.75rem;
+}
+
+.inner {
+	padding: 0 10vw;
+}
+
+@media screen and (max-width: 825px) {
+	.carouselContainer {
+		padding: 0;
+	}
+}

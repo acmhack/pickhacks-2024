@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import { useEffect, useState } from 'react';
 import Schedule from '@/components/Schedule';
 import Prizes from '@/components/Prizes';
 import Hero from '@/components/Hero';
@@ -12,6 +10,7 @@ import Footer from '@/components/Footer';
 import { littlestGuy, stars, leftblur, rightblur, bigblur } from '@/lib/Images';
 import TotalPrizes from '@/components/TotalPrizes';
 import Partners from '@/components/Partners';
+import Team from '@/components/Team';
 
 export default function Home() {
 	return (
@@ -36,20 +35,21 @@ export default function Home() {
 					<Prizes />
 					<TotalPrizes />
 				</div>
-				<div className={styles.section} id="sponsors">
+				<div className={styles.section} style={{ minHeight: '75vh' }} id="sponsors">
 					<Title>Sponsors</Title>
 					<Sponsors />
 				</div>
-				<div className={styles.section} id="partners">
+				<div className={styles.section} style={{ minHeight: '50vh', marginTop: '5em' }} id="partners">
 					<Title>Partners</Title>
 					<Partners />
 				</div>
-				<div className={styles.section} id="faq">
+				<div className={styles.section} style={{ marginTop: '5em' }} id="faq">
 					<Title>FAQ</Title>
 					<Faq />
-					<div className={styles.separate} id="team"></div>
-					<Title>Team</Title>
-					<p className={styles.fillerText}>Coming soon...</p>
+					<div style={{ width: '100vw', marginTop: '5em', marginBottom: '2em' }} id="team">
+						<Title>Team</Title>
+						<Team></Team>
+					</div>
 				</div>
 				<div className={styles.smallGuySection}>
 					<img src={littlestGuy.src} />
