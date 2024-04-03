@@ -1,5 +1,5 @@
 import { IMember } from '@/interfaces/IMember';
-import { littlestGuy, bullet, picklogo24, rahulg, maggief, tyler, daniellep, joshuak, mattm, marcellat, chase, jadac, rahulv, nathand, lindseyc, ericd, everetty, jasonx, ericw, vishaanthm } from './Images';
+import { littlestGuy, bullet, picklogo24, rahulg, maggief, tyler, daniellep, joshuak, mattm, marcellat, chase, jadac, rahulv, nathand, lindseyc, ericd, everetty, jasonx, ericw, vishaanthm, shrijam, laurenh } from './Images';
 
 export const Members: IMember[] = [
 	// Director
@@ -16,18 +16,18 @@ export const Members: IMember[] = [
 		role: 'Development Lead',
 		avatar: ericw.src
 	},
-	// {
-	// 	name: 'Shrija Maganti',
-	// 	linkedin: 'https://www.linkedin.com/in/shrija-maganti/',
-	// 	role: 'Logistics Lead',
-	// 	avatar: picklogo24.src
-	// },
-    // {
-	// 	name: 'Lauren Higgins',
-	// 	linkedin: 'https://www.linkedin.com/in/higgins7loh/',
-	// 	role: 'Design Lead',
-	// 	avatar: picklogo24.src
-	// },
+	{
+		name: 'Shrija Maganti',
+		linkedin: 'https://www.linkedin.com/in/shrija-maganti/',
+		role: 'Logistics Lead',
+		avatar: shrijam.src
+	},
+    {
+		name: 'Lauren Higgins',
+		linkedin: 'https://www.linkedin.com/in/higgins7loh/',
+		role: 'Design Lead',
+		avatar: laurenh.src
+	},
     {
 		name: 'Rahul Gopalan',
 		linkedin: 'https://www.linkedin.com/in/rahulgopalan/',
