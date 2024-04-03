@@ -48,7 +48,7 @@ export const Events: IEvent[] = [
     {
         day: 'Saturday',
         event: 'Breakfast',
-        time: '8:00am - 10:00am', //9:30am
+        time: '8:00am - 9:30am', //9:30am
         location: 'Havener - St. Pats A, B, C'
     },
     {
@@ -103,13 +103,13 @@ export const Events: IEvent[] = [
     {
         day: 'Sunday',
         event: 'Project Submissions Due',
-        time: '10am',
+        time: '10:00am',
         location: 'Online - Devpost'
     },
     {
         day: 'Sunday',
         event: 'Hacking Ends',
-        time: '11am',
+        time: '11:00am',
         location: 'Online - Devpost'
     },
     {
