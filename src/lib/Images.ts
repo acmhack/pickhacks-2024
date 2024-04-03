@@ -31,6 +31,8 @@ import rahulg from '../../public/images/avatars/rahulg.png';
 import rahulv from '../../public/images/avatars/rahulv.png';
 import tyler from '../../public/images/avatars/tyler.png';
 import vishaanthm from '../../public/images/avatars/vishaanthm.png';
+import shrijam from '../../public/images/avatars/shrijam.png'
+import laurenh from '../../public/images/avatars/laurenh.png'
 import metaquest3 from '../../public/images/prizes/metaquest3.jpg'
 import sennheiser from '../../public/images/prizes/sennheiser.png'
 import switcholed from '../../public/images/prizes/switcholed.png'
@@ -82,6 +84,8 @@ export {
 	rahulv,
 	tyler,
 	vishaanthm,
+	shrijam,
+	laurenh,
 	bigblur,
 	flashlightguy,
 	metaquest3,
