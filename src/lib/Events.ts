@@ -108,12 +108,6 @@ export const Events: IEvent[] = [
     },
     {
         day: 'Sunday',
-        event: 'Hacking Ends',
-        time: '11:00am',
-        location: 'Online - Devpost'
-    },
-    {
-        day: 'Sunday',
         event: 'Travel Reimbursement Booth',
         time: '10:00am - 2:00pm',
         location: 'Innovation Lab 1st Floor'
