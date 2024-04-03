@@ -1,4 +1,4 @@
-import { discord, instagram, linkedin, picklogo24, tiktok } from '@/lib/Images';
+import { devpost, discord, instagram, linkedin, picklogo24, tiktok } from '@/lib/Images';
 import styles from '@/styles/components/MobileNavbar.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -50,6 +50,9 @@ const MobileNavbar = () => {
 					REGISTER
 				</Link>
 				<div className={styles.socials}>
+					<a className={styles.icon} href='https://pickhacks-2024.devpost.com/' target='_blank'>
+						<img src={devpost.src} />
+					</a>
 					<a className={styles.icon} href='https://www.instagram.com/sandtpickhacks' target='_blank'>
 						<img src={instagram.src} />
 					</a>
