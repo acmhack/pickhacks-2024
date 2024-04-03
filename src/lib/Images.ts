@@ -48,6 +48,7 @@ import mosystems from '../../public/images/partners/missouri-systems-logo.png'
 import mlh from '../../public/images/partners/mlh-logo.png'
 import standoutstickers from '../../public/images/partners/stand-out-stickers-logo.png'
 import stuco from '../../public/images/partners/student-council-logo.jpg'
+import devpost from '../../public/images/icons/Devpost.png'
 
 export {
 	background2024,
@@ -99,5 +100,6 @@ export {
 	mosystems,
 	mlh,
 	standoutstickers,
-	stuco
+	stuco,
+    devpost
 };
