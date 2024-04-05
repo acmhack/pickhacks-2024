@@ -53,9 +53,9 @@ export const Events: IEvent[] = [
 	},
 	{
 		day: 'Saturday',
-		event: 'Speaker',
+		event: 'GDSC Workshop',
 		time: '11:00am - 12:00pm',
-		location: 'Room 115'
+		location: 'Room 213'
 	},
 	{
 		day: 'Saturday',
@@ -71,9 +71,9 @@ export const Events: IEvent[] = [
 	},
 	{
 		day: 'Saturday',
-		event: 'ACM-AI and GDSC Presentations',
+		event: 'ACM-AI Workshop',
 		time: '4:00pm - 5:00pm',
-		location: 'ACM-AI in Room 115; GDSC in Room 213'
+		location: 'Room 115'
 	},
 	{
 		day: 'Saturday',
